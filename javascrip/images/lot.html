@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <style>
+       
+        .container{
+            justify-content: center;
+            
+            max-width: 960px;
+            margin: auto;
+            height: 500px;
+            text-align: center;
+           
+        }
+        .frest {
+          
+          margin: auto;
+          max-width: 300px;
+          padding: 5px;
+          min-height: 150px;
+        }
+        .input{
+            margin-left: calc(center);
+            padding: 5px;
+            cursor: pointer;
+        }
+        input[type="Submit"]{
+            color: aqua;
+            cursor: pointer;
+            background: red;
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 10px;
+
+        }
+        input[type="Submit"]:hover{
+            color: black;
+            cursor: pointer;
+            background: rgb(197, 222, 8);
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 10px;
+
+        }
+        
+
+        </style>
+        <script>
+            var a =6;
+            var b =++a + --a;
+            // b=7+6=13
+            console.log("kêt qua của b:",b)
+            var c = ++a *a--;
+            // b= 7 * 7=49 
+            // ++a la lay ket qua sau khi +
+            // a-- la lay ket qua truoc khi cong -
+            console.log("ket qua c:",c)
+            let name ="Trung"
+            let you= "you"
+            let love= " say I Love "
+            let anser=name+love+you;
+            console.log(anser)
+            //var result = 'a' && 'b' && 'c';
+            //var result = 'a' && 'b'&& null && 'c';
+            /* will a value false if have a valua 1 to 6 exame 
+             0,null, underfined, NAN , false
+            */
+            // use or in javascrip ||
+            let result ="A" || Null || "B" || undefined || "C"
+            /* only a true this is true*/
+            if (result) {
+                console.log("Trung dep trai")
+            }
+            else{
+                console.log("do you want to me")
+            }
+            // value string in javascrip
+            let mail =" toi la trung sinh nam bao nhieu toi khong biet toi la sinh vien ";
+            console.log(mail.length)
+            // dem so ki tu
+            console.log(mail.trim().length)
+            // trim() tru 2 ky tu in 2 dau
+            console.log(mail.indexOf("trung"))
+            // vis tri cua trung trong chuoi -1 laf khong ton tai
+            console.log(mail.lastIndexOf('toi'))
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Anna Dowlin</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCqwhVOr9mr9psx0GL2QY-ahz8c94vhJy72YjmaB8&s">
+            <p>Hi! I'm Anna Dowlin, a NYC-based marketer. say hello!</p>
+            <div class="frest">
+                <div class="input">
+                    <input type="text" placeholder="Your name">
+                    <label for="your name">Surname</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="email" placeholder="Your email">
+                    <label for="your email">Email </label>
+                </div>
+                <div class="input">
+                    <input type="password" id="pas"  placeholder="Password">
+                    <label for="pas">Password</label>
+                </div>
+                <input class= "sub" type="Submit">
+            </div>
+        </div>
+    </body>
+</html>

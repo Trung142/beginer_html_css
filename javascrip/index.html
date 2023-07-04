@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>hello</h1>
+        <span class="btn" id="btn1">button</span>
+        <span class="btn" id="btn2">button</span>
+        <span class="btn" id="btn3">button</span>    
+    </div> 
+    <script>
+        //const traicay= new Array('xoai','buoi','cam','quyt')
+        const traicay =new Array(4)
+            traicay[0]='xoai'
+            traicay[1]='buoi'
+            traicay[2]='cam'
+            traicay[3]='quyt'
+        console.log(traicay[3]);
+        //document.write(traicay);
+        let year=2022
+        let date=2005
+        let born=year -date
+        if (born>18) {
+            console.log("đủ tuổi lấy vơ")
+        } else {
+            console.log("chưa đủ tuổi lấy vợ")
+        }
+        const input=2
+        switch (input) {
+            case 1:
+                console.log("hãy nhập sản phẩm bạn cần tìm")
+                break;
+            case 2:
+                console.log("hãy nhập sản phẩm được bán ra ")
+                break;
+            default:
+                break;
+        }
+        function playSound(){
+            const audio= new Audio("sfx_point.wav");
+            audio.play();
+        }
+        const btns= document.querySelector('#btn3')
+        btns.onclick = ()=>{
+            playSound();
+            btns.style.top= "100px";
+            btns.innerText="YOU";
+        }
+        const btn1 =document.querySelector('#btn1')
+        btn1.onclick = () => {
+            playSound();
+            btn1.style.top = "100px"
+            btn1.innerText ="I"
+        }
+        const btn2= document.querySelector('#btn2')
+        btn2.onclick = () => {
+            playSound();
+            btn2.innerText = "LOVE"
+        }
+    </script>
+    <input type="text" placeholder="">
+    <label for=""></label>
+    
+</body>
+</html>

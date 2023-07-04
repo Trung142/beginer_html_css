@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="background-image: url('./images/image1.jpg');"></div>
+        <div class="item" style="background-image: url('/javascrip/images/image1.jpg');"></div>
+        <div class="item" style="background-image: url('images/image3.png');"></div>
+        <div class="item" style="background-image: url('images/image6.jpg');"></div>
+        <div class="item" style="background-image: url('images/image5.jpg');"></div>
+    </div>
+    <style>
+        .item {
+            animation:rotateHue 1s alternate infinite;
+        }
+        @keyframes rotateHue{
+            to{
+                filter: hue-rotate(1turn);
+            }
+        }
+        .container > div{
+            flex: 1;
+            border-radius: 2rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+
+        }
+
+        .container>div:hover {
+            flex: 5;
+            cursor: pointer;
+        }
+    </style>
+</body>
+<script>
+    var sport = [
+        {
+            name:'soccer',
+            like: 7
+        },
+        {
+            name: 'vollebale',
+            like: 20
+        },
+        {
+            name:'ball',
+            like: 10
+        }
+    ]
+    function getcheckError(arr){
+          var sport= arr.filter(function(sport,index){
+           return sport.like >=10
+          })
+          return sport;
+    }
+    
+    console.log(getcheckError(sport))
+</script>
+</html>

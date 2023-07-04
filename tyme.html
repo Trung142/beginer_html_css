@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <style>
+        body{
+           height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background:#dfdfdf;
+        }
+        div{
+            display: flex;
+            position:relative;
+            text-align: center;
+        }
+        div>input{
+            position: absolute;
+            display: flex;
+            bottom: 0px;
+            margin: -50px 0px;
+
+        }
+    </style>
+    <div>
+        <img src="./images/user-solid.svg">
+        <input type="file" name="Trung"/>
+    </div>
+</body>
+<script>
+    const image=document.querySelector('img');
+    const input=document.querySelector('input');
+    input.addEventListener('change',function(){
+        image.src=URL.createObjectURL(input.files[0]);
+    });
+</script>
+</html>

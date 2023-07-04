@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter card Effects></title>
+</head>
+<body>
+    <h1>esha's restaurant</h1>
+    <h2>a New York City eatery</h2>
+    <div class="first1">
+        <p class="first">welsh ontion soko<span class="price">45$</span><br />
+        <small class="smalls">Mustard sierra leono bologi kale chard beet greens back-eyed pea
+            sorrel amaranth garlic tigernut spring onoin summer purslane asparagus lentil.
+        </small></p>
+    </div>
+    <div class="first2">
+        <p class="firsts">hello i'm trung <span  class="price">50$</span><br />
+        <small class="smalls1">Hello everyone i have a computer, i like code website ,now i study begining code web with html and css , javascrip
+            i dont know when code erro , i need a parens learn code. thank you!
+        </small></p>
+    </div>
+    <div class="first3">
+        <p class="firsts1">its this a food very good<span class="price">100$</span><br />
+        <small class="smalls2">everyone say me! how much is that? that is 100$ they wow out my got very cheap, 
+        it is greart thank you i eat had a chicken!</small></p>
+    </div>
+    <br /> <br />
+    <style>
+        body{
+            max-width: 700px;
+            background: #232323;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0 auto;
+        }
+        div{
+            height: 200px;
+            background-size: cover;
+            position: relative;
+            border-radius: 15px;
+            margin: 40px 10px 0 10px;
+            cursor: pointer;
+        }
+        h1{
+            font-family:  'Londrina Shadow', cursive;
+            text-align: center;
+            font-size: 75px;
+            color: #aaaaaa;
+            margin:46px 10px 0 10px;
+        }
+        h2{
+            color:#bbbbbb;
+            text-align:center;
+            font-size: 20px;
+            margin:0 10px 76px 10px;
+            
+        }
+        p{
+            color: rgb(255,255,255,1);
+            text-align: justify;
+            position: absolute;
+            padding: 20px;
+            line-height: 25px;
+            background: black;
+            background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0.4));
+            background:-webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+            background:-moz-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+            bottom: 0;
+            margin: 0;
+            height: 20px;
+            transition: height .5s;
+            -webkit-transition:height .5s;
+            -moz-transition: height .5s;
+        }
+        .price{
+            float: right;
+        }
+        small{ 
+            opacity: 0;
+        }
+        
+        .show-description p{
+            height: 150px;
+        }
+        .show-description small{
+            opacity:1;
+        }
+        .first1   {
+            background-image: url("./images/image1.jpg");
+        }
+        .first2 { 
+            background-image:url('./images/image2.jpg');
+        }
+        .first3 {
+            background-image: url('./images/image6.jpg');
+
+        }
+        @media (max-width=500px){
+            h1{
+                font-size: 15px;
+                margin-top: 20px;
+                line-height: 20px;
+            }
+            h2{
+                font-size: 10px;
+
+            }
+            div{
+                margin: 10px 50px 10px;
+            }
+            .small{
+                font-size: 16px;
+            }
+
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $('div').click(function(){
+            $(this).toggleClass('show-description');
+        });
+    </script>
+    <!-- <script>
+       const firsts3=document.querySelector('.first');
+       const firsts2=document.querySelector('.firsts');
+       const firsts1=document.querySelector('.firsts1');
+       const malls=document.querySelector('.smalls');
+       const malls1=document.querySelector('.smalls1');
+       const malls2=document.querySelector('.smalls2');
+       firsts3.onclick =() =>{
+       firsts3.style.height='110px';
+       malls.style.opacity=1;
+       
+       };
+       firsts2.onclick = () =>{
+        firsts2.style.height='110px'
+        malls1.style.opacity=1;
+       }
+       firsts1.onclick = () => {
+        firsts1.style.height='110px';
+        malls2.style.opacity=1;
+       }
+    </script> -->
+</body>
+</html>

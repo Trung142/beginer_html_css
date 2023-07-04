@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="./fontawe/fontawesome/css/all.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <form class="froms">
+                <div class="first">
+                    <img id="co"src="./images/download.png" alt="" width="40px" height="20px">
+                    <i id="bell" class="fa-solid fa-bell"></i>
+                </div>
+                <i id="vimeo" class="fa-brands fa-the-red-yeti"></i>
+                <h1>Trung142</h1>
+                <img  class="user" src="../images/user-solid (1).svg">
+                <input id="file" type="file" name="" value="">
+                <div id="foms">
+                    <i class="fa-solid fa-user-secret"></i>
+                    <input type="text" id="username" placeholder="User">
+                    <small></small>
+                    <span></span>
+                </div>
+                <div id="foms">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password">
+                    <small></small>
+                    <span></span>
+                    <div id="eye">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <label for="pass">Forgot password?</label>
+                </div>
+                <button type="submit" class="bth-submit">Log in </button>
+                <i id ="icon" class="fa-brands fa-intercom"></i>
+                <div class="first4">
+                    <i class="fa-regular fa-newspaper"><br/><span>News</span></i>
+                    <i class="fa-solid fa-qrcode"><br/><span>QR services</span></i>
+                    <i class="fa-brands fa-creative-commons"><br/><span>Create OTP</span></i>
+                    <i class="fa-brands fa-accessible-icon"><br/><span>User guide</span></i>
+                    <i class="fa-brands fa-superpowers"><br/><span>Support</span></i>
+                </div>
+            </form>
+        </div>
+        <style>
+        
+            body{
+                background-image: url('./images/anh-3d-thien-nhien-001.jpg');
+            }
+            .container{
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .froms{
+                max-width: 400px;
+                background:transparent;
+                flex-grow: 1;
+                box-shadow:0px 0px 17px rgba(0,0,0,0.8);
+                position: relative;
+            }
+            #bell{
+                float: right;
+                padding: 10px;
+                font-size: 30px;
+                color:aliceblue;
+            }
+            #co{
+                padding: 10px;
+            }
+            h1{
+                font-size: 50px;
+                color: aliceblue;
+                text-align: center;
+                padding: 10px;
+                text-shadow:0px 0px 10px rgba(227, 121, 107, 0.852);
+            }
+            #vimeo{
+                position: absolute;
+                font-size: 70px;
+                margin: -10px 90px 10px 250px;
+                color: aliceblue;
+            }
+
+            .user{
+                display: flex;
+                width: 150px;
+                height:150px;
+                margin: 0 auto;
+                border: 1px solid rgb(189, 213, 234);
+                border-radius: 50%;
+                box-shadow: 0px 0px 10px rgba(221, 201, 201, 0.543);
+            }
+            .user:hover{
+                border: 1px solid rgb(111, 139, 164);
+                box-shadow: 0px 0px 25px rgba(240, 240, 12, 0.543);
+            }
+            #file{
+                margin: 0 auto;
+                display: flex;
+                width: 180px;
+            }
+            #foms{
+                padding: 10px;
+                text-align: center;
+                color: rgb(66, 74, 81);
+                position: relative;
+            }
+            #eye{
+                display: inline-block;
+                margin: -10px;
+            }
+            
+            #foms input{
+                background: transparent;
+                width: 300px;
+                height: 30px;
+                border: 0;
+                outline: 0;
+                color: black;
+                border-bottom: 1px solid rgb(67, 226, 202);
+                position: relative;
+
+            }
+            #foms label{
+                font-size: 15px;
+                float: left;
+                padding: 10px 0 0 20px;
+                color: rgb(43, 232, 9);
+                text-decoration:underline;
+            }
+            button{
+                cursor: pointer;
+                border: 1px solid rgba(216, 184, 184, 0.4);
+                outline: 0s;
+                width: 300px;
+                padding:10px;
+                margin: 10px 0 0 30px;
+                color: aliceblue;
+                font-size: 20px;
+                background: rgba(87, 87, 185,0.5);
+                box-shadow: 0px 0px 10px rgba(87,87,185,0.4);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            button:hover{
+                border: 1px solid rgba(32, 248, 222, 0.4);
+                box-shadow: 0px 0px 20px rgba(15, 237, 178, 0.4);
+            }
+            #icon{
+                position: absolute;
+                font-size: 40px;
+                align-items: center;
+                width: 35px;
+                margin-top: 10px;
+                margin-left: 10px;
+                color: aqua;
+                box-shadow:0px 0px 10px rgba(128, 200, 167, 0.8);
+            }
+            .first4{
+                text-align: center;
+                padding: 10px;
+                margin-top: 10px;
+                font-size: 20px;
+            }
+            span{
+                font-size: 10px;
+                text-transform: lowercase;
+            }
+            @media (max-width=500px) {
+                
+            }
+            /*phan small*/
+            #foms.error small{
+                position: absolute;
+                bottom: -5px;
+                left: 58px;
+                color: red;
+            }
+            #foms.error span{
+                position: absolute;
+                width: 78%;
+                height: 1px;
+                left: 52px;
+                bottom: 10px;
+                background: red;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#eye').click(function(){
+                    $(this).children('i').toggleClass('fa-eye-slash fa-eye');
+                    $(this).toggleClass('show');
+                    if($(this).hasClass('show')){
+                        $(this).prevAll('input').attr('type','text');
+                    }
+                    else{
+                        $(this).prevAll('input').attr('type','password');
+                    }
+
+                });
+            });
+           
+                
+        </script>
+        <script>
+            const image=document.querySelector('.user');
+            const input=document.querySelector('#file');
+            input.addEventListener('change', function(){
+                image.src=URL.createObjectURL(input.files[0]);
+            })
+            //kiêm tra longin
+            var username =document.querySelector('#username');
+            var password = document.querySelector('#password');
+            var form = document.querySelector('form');
+            function showError(input,message){
+                let parent = input.parentElement;
+                let small = parent.querySelector('small');
+                parent.classList.add('error');
+                small.innerText=message;
+            }
+            function showacceess(input){
+                let parent = input.parentElement;
+                let small = parent.querySelector('small');
+                parent.classList.remove('error');
+                small.innerText = ''
+            }
+            function checkEmtyError(listinput){
+                let isEmtyerror = true;
+                listinput.forEach(input => {
+                    input.value = input.value.trim();
+                    if(input.value == ''){
+                        isEmtyerror = true;
+                        showError(input,'khong duoc de trong');
+                    }
+                    else{
+                        showacceess(input)
+                    }
+                });
+                return isEmtyerror;
+            }
+            function checklengthError(input, min, max){
+                input.value = input.value.trim();
+                if(input.value.length < min ){
+                    showError(input, `nhieu hon ${min} ky tu`);
+                    return true;
+                }
+                if(input.value.length > max){
+                    showError(input, `it hon ${max} ky tu`);
+                    return true;
+                }
+                return false;
+            }
+            function checkpasswordError(passwordInput , cfpasswordInput){
+                if(passwordInput.value !== cfpasswordInput.value){
+                    showError(cfpasswordInput,'mk khong trung khop');
+                    return true;
+                }
+                return false;
+                
+            }
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                let isEmtyerror = checkEmtyError([username, password]);
+                let isusernamelengthErro = checklengthError(username, 5,10);
+                let ispasswordlengthError = checklengthError(password,5,10);
+                let checkpassword = checkpasswordError(username, password)
+
+            })
+        </script>
+    </body>
+</html>
